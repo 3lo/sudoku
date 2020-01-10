@@ -1,0 +1,5 @@
+# Sudoku solver
+
+Requirements:
+ - OpenCV
+ 
