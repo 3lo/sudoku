@@ -17,6 +17,19 @@ def solve():
     pass
 
 
+grid = [[0, 7, 0, 0, 0, 4, 1, 3, 0],
+        [9, 4, 5, 6, 1, 0, 0, 0, 0],
+        [0, 0, 0, 0, 5, 7, 0, 0, 6],
+        [0, 5, 0, 0, 3, 0, 0, 0, 4],
+        [6, 9, 3, 0, 4, 0, 0, 0, 2],
+        [4, 8, 2, 1, 0, 6, 0, 5, 7],
+        [5, 0, 0, 3, 7, 0, 0, 6, 0],
+        [0, 6, 0, 0, 0, 0, 0, 8, 1],
+        [8, 0, 9, 5, 0, 0, 0, 7, 0]]
+
+for i in range(9):  # printing grid
+    print(grid[i])
+
 if cv.waitKey(0) == ord('f'):
     # Screen capture sudoku.com board
     # Crop image to only the board
