@@ -11,8 +11,8 @@ def displayIMG():
 
 
 def solve():
-    # solve sudoku board
-    # solution can be find with backtracking - recursion
+    # solve sudoku board - can be found with backtracking - recursion
+    # List of path - and List of numbers we visited but left to get rid of infinite loops
     displayIMG()
     pass
 
