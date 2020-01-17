@@ -2,6 +2,8 @@
 
 Requirements:
  - OpenCV
+ - PIL
+ - pytesseract
  
 Idea:
  - Go https://sudoku.com
