@@ -1,6 +1,8 @@
 import numpy as np
 import cv2 as cv
 from PIL import ImageGrab
+from PIL import Image
+import pytesseract
 print("sudoku")
 
 cv.namedWindow('image', cv.WINDOW_NORMAL)  # creates GUI window named Image.
@@ -40,6 +42,7 @@ def grabImg():
     cv.imshow("frame", frame)
     cv.waitKey(0)
     cv.destroyAllWindows()
+    print(pytesseract.image_to_string(Image.open(img)))
 
 
 if cv.waitKey(0) == ord('f'):
