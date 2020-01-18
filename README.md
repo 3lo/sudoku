@@ -12,4 +12,4 @@ Idea:
  - Uses backtracking to solve sudoku puzzle
  - Produce image with all the numbers filled in
  
-![Before](https://imgur.com/Id0kPri.png "")
+![Before](https://imgur.com/Id0kPri.png "Before")
