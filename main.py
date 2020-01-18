@@ -1,10 +1,9 @@
 import numpy as np
 import cv2 as cv
 from PIL import ImageGrab
-from PIL import Image
 import pytesseract
 print("sudoku")
-
+pytesseract.pytesseract.tesseract_cmd = r'C:\Program Files\Tesseract-OCR\tesseract'
 cv.namedWindow('image', cv.WINDOW_NORMAL)  # creates GUI window named Image.
 cv.waitKey(0)  # waits for any keyboard event. 0 means indefinitely
 
@@ -42,12 +41,11 @@ def grabImg():
     cv.imshow("frame", frame)
     cv.waitKey(0)
     cv.destroyAllWindows()
-    print(pytesseract.image_to_string(Image.open(img)))
+    print(pytesseract.image_to_string(img))
 
 
 if cv.waitKey(0) == ord('f'):
     grabImg()  # function screen captures sudoku.com and is cropped in on the sudoku board
     solve()
-    print('f')
 
 cv.destroyAllWindows()  # destroys the window we created
