@@ -41,7 +41,7 @@ def grabImg():
     cv.imshow("frame", frame)
     cv.waitKey(0)
     cv.destroyAllWindows()
-    print(pytesseract.image_to_string(img))
+    print(pytesseract.image_to_string(img))  # Returns the result of a Tesseract OCR run on the image to string
 
 
 if cv.waitKey(0) == ord('f'):
